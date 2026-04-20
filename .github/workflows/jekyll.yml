@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # 내용을 읽고 쓸 수 있는 권한 추가
+  contents: read
   pages: write
   id-token: write
 
