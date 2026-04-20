@@ -5,10 +5,24 @@
 @use "variables" as v;
 
 .navbar {
-  box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  box-shadow: 0 1px 0 0 var(--global-divider-color);
+  border-bottom: none;
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  // 다크 모드에서 반투명 처리
+  html[data-theme="dark"] & {
+    background-color: rgba(15, 17, 23, 0.85);
+  }
+
+  // 라이트 모드에서 반투명 처리
+  html:not([data-theme="dark"]) & {
+    background-color: rgba(255, 255, 255, 0.88);
+  }
 }
 
 .navbar .dropdown-menu,

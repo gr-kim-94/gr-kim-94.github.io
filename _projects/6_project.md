@@ -1,80 +1,39 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: RemoteMeeting 기업용 화상회의
+description: Swift 마이그레이션 · AI 회의록 · MQTT · WebRTC · Lottie 애니메이션
+img: projects/6_project.png
+importance: 6
+category: iOS
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<span class="badge bg-danger">알서포트</span> <span class="badge bg-info text-dark">40% 기여</span>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**25명 (iOS 2명/팀원)** · **2년** · Objective-C · Swift
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Swift 마이그레이션 · 회의록 AI 요약 · 화상회의 리액션 기능 담당
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### 오픈소스
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+AFNetworking · SRWebSocket · MQTTClient · GoogleMLKit · Firebase · SDWebImage
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+### 주요 구현
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+**Swift 마이그레이션**
+- 기존 80% Objective-C 코드를 TDD 기반 Unit Test 선행으로 사이드 이슈 최소화
+- UIStackView 리팩토링을 통해 복잡한 layout constraints 제거
+- 결과: 100% Swift 전환, 유지보수 용이, UI 사이드 이슈 감소
 
-{% endraw %}
+**회의록 AI 요약**
+- Server API ↔ MQTT 하이브리드 통신으로 실시간 Streaming 수신
+- AI 응답 완료 시점을 [DONE] 시그널로 UI 상태 전환
+- Cell 높이 캐싱을 활용해 스크롤 성능 최적화
+
+**화상회의 리액션**
+- Lottie 이미지 플로팅 애니메이션 (아래에서 위로 벚꽃이 살랑 올라가는 효과)
+- 사이즈 · 속도 · 회전 · 방향 등 랜덤 값들의 범위를 디자이너와 커스터마이징
+- 디자인 알고리즘 문서화 후 Android 파트에 전달하여 **UI 일관성 확보**

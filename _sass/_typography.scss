@@ -4,6 +4,30 @@
 
 @use "variables" as v;
 
+// Pretendard font stack — variable font with fallbacks
+$font-pretendard:
+  "Pretendard Variable",
+  Pretendard,
+  -apple-system,
+  BlinkMacSystemFont,
+  system-ui,
+  "Apple SD Gothic Neo",
+  "Noto Sans KR",
+  "Malgun Gothic",
+  sans-serif;
+
+:root {
+  --font-pretendard: #{$font-pretendard};
+}
+
+body {
+  font-family: var(--font-pretendard);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 p,
 h1,
 h2,
@@ -17,6 +41,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: var(--font-pretendard);
 }
 
 hr {

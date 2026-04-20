@@ -5,6 +5,8 @@
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  font-family: var(--font-pretendard, sans-serif);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 
   .container {
     color: var(--global-footer-text-color);
@@ -15,6 +17,7 @@ footer.fixed-bottom {
 
   a {
     color: var(--global-footer-link-color);
+    transition: color 0.15s ease;
 
     &:hover {
       color: var(--global-theme-color);

@@ -2,6 +2,154 @@
  * CV shared styles
  *****************************/
 
+// ── Work / Education Timeline ─────────────────────────────────────────────────
+//
+// Grid layout: [date 80px] [dot col 28px] [content 1fr]
+// Column gap: 1rem
+// Dot center from left: 80 + 16 + 14 = 110px  →  work-timeline::before left: 110px
+
+$tl-date-w: 80px;
+$tl-dot-col: 28px;
+$tl-gap: 1rem;
+
+.work-timeline {
+  position: relative;
+  margin: 1.5rem 0;
+
+  // 단일 수직선 — 컨테이너 전체 높이에 걸쳐 그려서 dots 간격에 무관하게 정렬됨
+  &::before {
+    content: "";
+    position: absolute;
+    // date-width + gap + half dot-col  (1rem = 16px)
+    left: calc(#{$tl-date-w} + #{$tl-gap} + #{$tl-dot-col} / 2);
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: var(--global-divider-color);
+    border-radius: 1px;
+  }
+
+  @media (max-width: 576px) {
+    &::before {
+      left: calc(#{$tl-dot-col} / 2);
+    }
+  }
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: #{$tl-date-w} #{$tl-dot-col} 1fr;
+  column-gap: #{$tl-gap};
+  align-items: start;
+  margin-bottom: 2.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: #{$tl-dot-col} 1fr;
+  }
+}
+
+.timeline-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 3px;
+  gap: 0.1rem;
+
+  span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+    line-height: 1.4;
+
+    &:first-child {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--global-text-color);
+    }
+  }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.timeline-dot {
+  // dot 자체: 12×12px 원, 28px 컬럼 안에서 수평 중앙 정렬
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2.5px solid var(--global-theme-color);
+  background-color: var(--global-bg-color);
+  margin-top: 4px;
+  justify-self: center; // 컬럼 내 수평 중앙
+  margin-left: 1.5px;
+  position: relative;
+  z-index: 1; // 수직선 위에 렌더링
+
+  &--accent {
+    background-color: var(--global-theme-color);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+
+    html:not([data-theme="dark"]) & {
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.18);
+    }
+  }
+}
+
+.timeline-content {
+  padding-bottom: 0.5rem;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 0.15rem;
+}
+
+.timeline-role {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-detail {
+  margin: 0 0 0.75rem 0;
+  padding-left: 1.1rem;
+
+  li {
+    font-size: 0.875rem;
+    color: var(--global-text-color);
+    margin-bottom: 0.35rem;
+    line-height: 1.65;
+    word-break: keep-all;
+  }
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+
+  span {
+    display: inline-block;
+    padding: 0.18rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.73rem;
+    font-weight: 500;
+    background-color: var(--global-code-bg-color);
+    color: var(--global-theme-color);
+    border: 1px solid var(--global-divider-color);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+
 div.container-link-button {
   margin-right: 0.5rem;
 }

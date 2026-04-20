@@ -1,80 +1,116 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+<div class="about-page">
+  <!-- ── Hero ─────────────────────────────────────── -->
+  <section class="about-hero">
+    {% if page.profile and page.profile.image %}
+      {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+      <div class="hero-photo-wrap">
+        {%
+          include figure.liquid
+          loading="eager"
+          path=profile_image_path
+          class="hero-photo"
+          alt="Profile photo"
+          cache_bust=true
+        %}
+      </div>
+    {% endif %}
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+    <div class="hero-info">
+      <h1 class="hero-name">
+        {% if site.title == 'blank' %}
+          {% if site.korean_name %}
+            {{- site.korean_name -}}<span class="hero-name-en"> ({{- site.first_name -}}{% if site.middle_name %} {{- site.middle_name -}}{% endif %} {{- site.last_name -}})</span>
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            <span>{{ site.first_name }}</span>
+            {%- if site.middle_name %} {{ site.middle_name }}{% endif %}
+            {{ site.last_name }}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+        {% else %}
+          {{ site.title }}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+      </h1>
+
+      <p class="hero-role">{{ page.subtitle }}</p>
+
+      {% if page.profile and page.profile.more_info %}
+        <div class="hero-links">{{ page.profile.more_info }}</div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- ── Bio ──────────────────────────────────────── -->
+  <section class="about-bio">
+    {{ content }}
+  </section>
+
+  <!-- ── Skills ───────────────────────────────────── -->
+  <section class="about-skills">
+    <h2 class="section-heading">기술 스택</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <span class="skill-group-label">🤖 AI</span>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">LangGraph</span>
+          <span class="skill-tag">VectorDB</span>
+          <span class="skill-tag">LLM Evaluation</span>
+          <span class="skill-tag">FastAPI</span>
+        </div>
       </div>
-    {% endif %}
+      <div class="skill-group">
+        <span class="skill-group-label">📱 iOS</span>
+        <div class="skill-tags">
+          <span class="skill-tag">Swift</span>
+          <span class="skill-tag">SwiftUI</span>
+          <span class="skill-tag">Objective-C</span>
+          <span class="skill-tag">Combine</span>
+          <span class="skill-tag">WebRTC</span>
+          <span class="skill-tag">WebSocket</span>
+          <span class="skill-tag">MQTT</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-group-label">🛠 도구</span>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+  <!-- Selected papers / News / Social (선택적) -->
+  {% if page.selected_papers %}
+    <section class="about-section">
+      <h2 class="section-heading"><a href="{{ '/publications/' | relative_url }}" style="color:inherit">Publications</a></h2>
       {% include selected_papers.liquid %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="about-section">
+      <h2 class="section-heading"><a href="{{ '/news/' | relative_url }}" style="color:inherit">News</a></h2>
+      {% include news.liquid limit=true %}
+    </section>
+  {% endif %}
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+  {% if page.social %}
+    <div class="social">
+      <div class="contact-icons">{% social_links %}</div>
+      <div class="contact-note">{{ site.contact_note }}</div>
+    </div>
+  {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+    {% include newsletter.liquid center=true %}
+  {% endif %}
 </div>

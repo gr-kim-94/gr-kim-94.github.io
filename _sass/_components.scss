@@ -38,18 +38,34 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-card-border-color, var(--global-divider-color));
+  border-radius: 12px;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  html[data-theme="dark"] &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
 
   .card-img {
     width: 100%;
     padding-top: 1.25rem;
+    border-radius: 10px 10px 0 0;
   }
 
   .card-title {
     color: var(--global-text-color);
+    font-weight: 600;
   }
 
   .card-body {
-    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.25rem;
   }
 }
 

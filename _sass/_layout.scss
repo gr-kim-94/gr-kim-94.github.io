@@ -8,6 +8,7 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: var(--font-pretendard, sans-serif);
 
   h1,
   h2,
@@ -52,7 +53,85 @@ body.sticky-bottom-footer {
 // Uses jekyll-scholar for BibTeX parsing and Bootstrap cards for display
 
 /*****************************************************************************
-* Projects
+* Project detail page
 *****************************************************************************/
 
-// TODO: redefine projects layout.
+.post article {
+  // 줄간격 및 단락 간격
+  p,
+  li {
+    line-height: 1.85;
+    word-break: keep-all;
+  }
+
+  p {
+    margin-bottom: 1.1rem;
+  }
+
+  h2,
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.4rem;
+    margin-bottom: 1rem;
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  // 인라인 코드
+  code {
+    font-size: 0.85em;
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    background-color: var(--global-code-bg-color);
+    color: var(--global-theme-color);
+  }
+
+  // 테이블 줄간격
+  table {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 0.55rem 0.9rem;
+      border: 1px solid var(--global-divider-color);
+      line-height: 1.6;
+    }
+
+    th {
+      background-color: var(--global-bg-secondary-color);
+      font-weight: 600;
+    }
+  }
+
+  // 구분선
+  hr {
+    margin: 2rem 0;
+    border-color: var(--global-divider-color);
+  }
+
+  // 뱃지
+  .badge {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.45em 0.75em;
+    border-radius: 6px;
+    margin: 0.3rem 0.2rem;
+    display: inline-block;
+  }
+}

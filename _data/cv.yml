@@ -1,189 +1,211 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: 김가람 (Garam  Kim)
+  label: AI & iOS Developer
+  email: kimmuuulll@gmail.com
+  location: 대한민국
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: >
+    7년 4개월의 iOS 개발 경험과 AI 개발 역량을 보유한 개발자. SwiftUI, Combine, WebRTC 기반 앱 개발부터 RAG
+    아키텍처, LangGraph 기반 AI 에이전트 개발까지. 사용자 경험을 최우선으로 생각하며, 팀과 함께 성장하는 것을 중요하게
+    생각합니다.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: gr-kim-94
 
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  work:
+    - name: 알서포트 (Rsupport)
+      location: 대한민국
+      position: iOS Developer (모바일개발 2팀)
+      url: https://www.rsupport.com
+      startDate: "2021-09"
+      endDate: "2024-07"
+      summary: 가상오피스 및 기업용 화상회의 iOS 앱 개발
+      highlights:
+        - "RFICE 가상오피스: Unity 연동, SwiftUI/Combine 도입, MediaSoup WebRTC, Stomp
+          WebSocket 기반 채팅 개발"
+        - "RemoteMeeting: Objective-C → Swift 100% 마이그레이션 (TDD 기반 사이드 이펙트 최소화)"
+        - "AI 회의록 요약: MQTT 하이브리드 통신으로 실시간 Streaming 수신, Cell 높이 캐싱으로 스크롤 성능 최적화"
+        - "화상회의 리액션: Lottie 이미지 플로팅 애니메이션 구현, 디자인 알고리즘 문서화 후 Android 파트 전달로 UI
+          일관성 확보"
+        - "Unity 엔진 메모리 이슈 저하, 사내 협업 도구로 베타 배포 성공"
 
-  sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+    - name: 포커스원 (FocusOne)
+      location: 대한민국
+      position: iOS 파트 리더 (SK C&C 현장대리인)
+      startDate: "2020-08"
+      endDate: "2021-08"
+      summary: SK 계열사 사내 앱 250개 운영 및 iOS 파트 리더
+      highlights:
+        - "SK 계열사 사내 앱 250개 운영 및 유지보수 (iOS 리더)"
+        - "QA 배포 방식 개선: IPA 직접 전달 → Firebase Hosting 기반 웹 배포 전환, QA 리드타임 단축"
+        - "단일 빌드 기반 서버 전환 기능 개발로 재빌드 리소스 제거"
+        - "TokTokTV 신규 개발: WKWebView 기반 동영상 뷰어, 파일 비동기 다운로드 로직 구현"
+        - "개선된 QA 배포 방식을 타 부서 표준 가이드라인으로 확산"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+    - name: 포커스원 (FocusOne)
+      location: 대한민국
+      position: iOS Developer (소프트웨어개발팀)
+      startDate: "2017-04"
+      endDate: "2020-08"
+      summary: 다양한 클라이언트 iOS 앱 개발 및 유지보수
+      highlights:
+        - "마이홈플러스 스토리: 비디오 스트리밍 최적화 (재생 딜레이 3~5s → 0.5s), 스크롤 버벅임 제거"
+        - "마이홈플러스: 룰렛 이벤트, 관리자 타임세일 이벤트, n개 첨부파일 병렬 업로드 직렬화 파이프라인 구축"
+        - "삼호건설 S-mBASS: SQLite InnerJoin으로 본공사 데이터 연동, 온라인 복귀 시 서버 데이터 싱크 자동화"
+        - "서울도시가스: AVFoundation 바코드 인식 기반 장비 입출고 관리, 카메라 세션 비동기 처리로 UI 프리징 없음"
+        - "노랑풍선: WKWebsiteDataStore 쿠키 공유로 자동로그인, AppSolid 보안 솔루션 적용"
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+  education:
+    - institution: SK 네트웍스 Family AI 캠프 21기
+      location: 대한민국
+      area: AI (RAG, LangGraph, LLM, VectorDB)
+      studyType: 교육
+      startDate: "2025-09"
+      endDate: "2026-03"
+      score: ""
+      courses:
+        - "Python · Scikit-learn · Pandas · RAG · LangGraph · VectorDB · LLM
+          Evaluation"
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+    - institution: 전주대학교
+      location: 전주, 대한민국
+      area: 컴퓨터공학과
+      studyType: 학사
+      startDate: "2013-03"
+      endDate: "2017-02"
+      score: "4.01/4.5"
+      courses:
+        - "컴퓨터공학 전공"
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+  awards:
+    - title: "[1위 수상] SK 네트웍스 AI 캠프 - 한국 여행지 추천 서비스"
+      date: "2026-03"
+      awarder: SK 네트웍스
+      summary: "Multi-Agent RAG, LangGraph 기반 방한 외국인을 위한 여행지 추천 서비스. 팀장/AI&Backend 담당."
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+    - title: "[상위 11%] Hecto AI Challenge - 딥페이크 이미지/영상 분류"
+      date: "2026-01"
+      awarder: Hecto
+      summary: "Microsoft SwinV2-Small 모델, Power Mean Pooling 전략으로 AUC 0.8363 달성.
+        Dacon 대회."
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+    - title: "[Bronze] Kaggle - Hull Tactical Market Prediction"
+      date: "2026"
+      awarder: Kaggle
+      summary: "S&P 500 일별 수익률 예측. LightGBM + EWMA + GARCH 앙상블. 평가 진행 중 (~26년 6월)."
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+    - title: Superstar 인증서
+      date: "2017-02"
+      awarder: 전주대학교
+      summary: "전주대학교 재학기간 동안 교내외 활동의 참여 정도 및 성과에 따라 인증서 수여."
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+  certificates:
+    - name: 정보처리기사
+      date: "2016-05"
+      issuer: 한국산업인력공단
+      icon: fa-solid fa-clipboard-check
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    - name: SQLD
+      date: "2017-04"
+      issuer: 한국데이터진흥원
+      icon: fa-solid fa-clipboard-check
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+    - name: 컴퓨터활용능력 2급
+      date: "2015-11"
+      issuer: 대한상공회의소
+      icon: fa-solid fa-clipboard-check
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+    - name: OCJP
+      date: "2015-07"
+      issuer: Oracle
+      icon: fa-solid fa-clipboard-check
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+  skills:
+    - name: AI 개발
+      level: Intermediate
+      icon: fa-solid fa-brain
+      keywords:
+        - Python
+        - RAG
+        - LangGraph
+        - VectorDB (Qdrant)
+        - LLM Evaluation (Ragas)
+        - Scikit-learn
+        - Pandas
+        - FastAPI
 
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    - name: iOS 개발
+      level: Senior
+      icon: fa-brands fa-apple
+      keywords:
+        - Swift
+        - SwiftUI
+        - Objective-C
+        - Combine
+        - SwiftData
+        - WebRTC
+        - WebSocket
+        - MQTT
+        - MVVM
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+    - name: 도구 및 인프라
+      level: Intermediate
+      icon: fa-solid fa-wrench
+      keywords:
+        - Git
+        - GitHub
+        - Firebase
+        - AWS
+        - SQLite
+        - Docker
 
-      - name: English
-        summary: "Fluent"
+  languages:
+    - language: 한국어
+      fluency: Native speaker
+      icon: ""
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+    - language: English
+      fluency: Basic
+      icon: ""
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+  interests:
+    - name: AI 개발
+      icon: fa-solid fa-robot
+      keywords:
+        - Multi-Agent 시스템
+        - RAG 아키텍처
+        - LLM Fine-tuning
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+    - name: iOS 개발
+      icon: fa-brands fa-apple
+      keywords:
+        - SwiftUI
+        - 앱 아키텍처
+        - 성능 최적화
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+  volunteer:
+    - organization: 2016학년도 하계 몽골 해외봉사활동
+      location: 몽골
+      position: IT팀 팀장
+      startDate: "2016-07-02"
+      endDate: "2016-07-12"
+      summary: "몽골 학교로 파견되어 고등학생들에게 포토샵, PPT 교육 진행. 네트워크 이슈를 USB 대체로 해결."
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+  projects:
+    - name: 앞바르여행 (App Store 출시)
+      summary: "제주도 해안도로 경로 추천 서비스. 시계/반시계 방향 최적 경로 알고리즘 구현."
+      highlights:
+        - "Swift · Firebase Database · NMapsMap · Kakao Local API"
+      startDate: "2022"
+      endDate: ""
+      url: https://apps.apple.com/kr/app/%EC%95%9E%EB%B0%94%EB%A5%B4%EC%97%AC%ED%96%89/id1670032524
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    - name: 차비서 (App Store 출시)
+      summary: "차량 정비 내역 관리 및 정비 비용 통계 시각화 서비스."
+      highlights:
+        - "SwiftUI · SwiftData · Charts"
+        - "View-driven 아키텍처, @Query 매크로 실시간 데이터 동기화"
+      startDate: "2023"
+      endDate: ""
+      url: https://apps.apple.com/kr/app/%EC%B0%A8%EB%B9%84%EC%84%9C-%ED%8E%B8%EB%A6%AC%ED%95%98%EA%B3%A0-%EC%89%AC%EC%9A%B4-%EC%9E%90%EB%8F%99%EC%B0%A8-%EA%B4%80%EB%A6%AC/id6471874838

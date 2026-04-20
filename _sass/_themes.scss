@@ -6,29 +6,27 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+  --global-bg-color: #ffffff;
+  --global-bg-secondary-color: #f8fafc;
   --global-code-bg-color: #{v.$code-bg-color-light};
-  --global-text-color: #{v.$black-color};
-  --global-text-color-light: #{v.$grey-color};
+  --global-text-color: #111827;
+  --global-text-color-light: #6b7280;
+  --global-text-color-muted: #9ca3af;
   --global-theme-color: #{v.$purple-color};
-  --global-hover-color: #{v.$purple-color};
+  --global-hover-color: #4f46e5;
   --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-dark};
-  --global-footer-text-color: #{v.$grey-color-light};
-  --global-footer-link-color: #{v.$white-color};
-  --global-distill-app-color: #{v.$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-footer-bg-color: #111827;
+  --global-footer-text-color: #9ca3af;
+  --global-footer-link-color: #e5e7eb;
+  --global-distill-app-color: #6b7280;
+  --global-divider-color: rgba(17, 24, 39, 0.07);
   --global-card-bg-color: #{v.$white-color};
+  --global-card-border-color: rgba(17, 24, 39, 0.08);
   --global-highlight-color: #{v.$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$black-color, "red", v.$space: rgb)},
-    #{color.channel(v.$black-color, "green", v.$space: rgb)},
-    #{color.channel(v.$black-color, "blue", v.$space: rgb)},
-    0.4
-  );
+  --global-back-to-top-bg-color: rgba(17, 24, 39, 0.45);
   --global-back-to-top-text-color: #{v.$white-color};
   --global-newsletter-bg-color: #{v.$white-color};
-  --global-newsletter-text-color: #{v.$black-color};
+  --global-newsletter-text-color: #111827;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -76,28 +74,84 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{v.$grey-color-dark};
+  --global-bg-color: #0f1117;
+  --global-bg-secondary-color: #161b27;
   --global-code-bg-color: #{v.$code-bg-color-dark};
-  --global-text-color: #{v.$grey-color-light};
-  --global-text-color-light: #{v.$grey-color};
+  --global-text-color: #f1f5f9;
+  --global-text-color-light: #94a3b8;
+  --global-text-color-muted: #64748b;
   --global-theme-color: #{v.$cyan-color};
-  --global-hover-color: #{v.$cyan-color};
-  --global-hover-text-color: #{v.$white-color};
-  --global-footer-bg-color: #{v.$grey-color-light};
-  --global-footer-text-color: #{v.$grey-color-dark};
-  --global-footer-link-color: #{v.$black-color};
-  --global-distill-app-color: #{v.$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{v.$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel(v.$white-color, "red", v.$space: rgb)},
-    #{color.channel(v.$white-color, "green", v.$space: rgb)},
-    #{color.channel(v.$white-color, "blue", v.$space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{v.$black-color};
-  --global-newsletter-bg-color: #{v.$grey-color-light};
-  --global-newsletter-text-color: #{v.$grey-color-dark};
+  --global-hover-color: #7dd3fc;
+  --global-hover-text-color: #0f1117;
+  --global-footer-bg-color: #060a12;
+  --global-footer-text-color: #475569;
+  --global-footer-link-color: #94a3b8;
+  --global-distill-app-color: #94a3b8;
+  --global-divider-color: #1e293b;
+  --global-card-bg-color: #1a2035;
+  --global-card-border-color: rgba(241, 245, 249, 0.08);
+  --global-back-to-top-bg-color: rgba(241, 245, 249, 0.15);
+  --global-back-to-top-text-color: #f1f5f9;
+  --global-newsletter-bg-color: #1a2035;
+  --global-newsletter-text-color: #f1f5f9;
+
+  // Bootstrap 5 변수 강제 override — 다크모드 가시성
+  --bs-body-color: #f1f5f9;
+  --bs-body-bg: #0f1117;
+  --bs-secondary-color: #94a3b8;
+  --bs-border-color: #1e293b;
+  --bs-card-bg: #1a2035;
+  --bs-card-border-color: rgba(241, 245, 249, 0.08);
+  --bs-list-group-bg: transparent;
+  --bs-list-group-color: #f1f5f9;
+  --bs-list-group-border-color: #1e293b;
+  --bs-table-bg: transparent;
+  --bs-table-color: #f1f5f9;
+  --bs-table-border-color: #1e293b;
+  --bs-tertiary-bg: #161b27;
+  --bs-emphasis-color: #f8fafc;
+
+  // Bootstrap 컴포넌트 텍스트 색상 강제 적용
+  .text-muted {
+    color: #94a3b8 !important;
+  }
+
+  .card-title,
+  .card-subtitle,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #f1f5f9;
+  }
+
+  .card-subtitle {
+    color: #94a3b8 !important;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border-color: #1e293b;
+    color: #f1f5f9;
+  }
+
+  .badge.bg-light {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+    border-color: #334155 !important;
+  }
+
+  table {
+    color: #f1f5f9;
+
+    th,
+    td {
+      color: #f1f5f9;
+      border-color: #1e293b;
+    }
+  }
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #215d42;

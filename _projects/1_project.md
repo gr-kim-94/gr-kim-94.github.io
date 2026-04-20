@@ -1,81 +1,48 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: 한국 여행지 추천 서비스
+description: Multi-Agent RAG · LangGraph · Qdrant · AWS · 1위 수상
+img: projects/1_project.png
 importance: 1
-category: work
-related_publications: true
+category: AI
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<span class="badge bg-primary">SK 네트웍스 FAMILY AI 캠프</span> <span class="badge bg-success">🏆 1위 수상</span>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**5명 (팀장/AI&Backend)** · **2개월** · Python · DBML · React
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+아키텍처 설계와 AWS 구축, 데이터 전처리 및 LangGraph 챗봇 담당
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### 오픈소스
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+LangGraph · FastAPI · MySQL · Qdrant · GoogleSignIn
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+### LangGraph 설계
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+| 노드 | 역할 |
+|------|------|
+| **Intent Agent** | 사용자 질의 의도 분석, 다음 노드 결정 |
+| **Planner Agent** | 여행 일정 수립 |
+| **Retriever Node** | SparseDB, 이미지·텍스트 하이브리드 검색, Reranker |
+| **Executor Node** | 최종 답변 출력 |
 
-{% endraw %}
+### 데이터 전처리
+
+- 결측치 제거
+- JSON 데이터를 LLM으로 정서적 데이터 보강
+- 이미지는 photos Collection에 별도 저장
+
+### Embedding Model
+
+| 모델 | 용도 | 특징 |
+|------|------|------|
+| **CLIP** | Vision Embedding | 이미지·텍스트 교차 검색, 추상적 문장 검색 |
+| **BGE-M3** | Text Embedding | 다국어 지원, Sparse DB, CLIP 영어 한계 보완 |
+
+### 아키텍처
+
+- HTTPS + Route 53 / DB: RDS + Qdrant + S3 / CI/CD: GitHub Actions

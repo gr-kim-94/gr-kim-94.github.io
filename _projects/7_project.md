@@ -1,81 +1,37 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+title: SK C&C 사내 앱 250개 운영
+description: iOS 파트 리더 · QA 프로세스 개선 · Firebase Hosting · Objective-C · Swift
+importance: 7
+category: iOS
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<span class="badge bg-warning text-dark">포커스원</span> <span class="badge bg-info text-dark">70% 기여</span>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**15명 (iOS 2명/리더)** · **1년** · Objective-C · Swift · AppGroups
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+유지보수 · 신규 개발 · 자체 개선
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+---
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### 유지보수
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- 프로비저닝 인증서 갱신 (연 1회) · 신규 OS 버전 대응 · 코드레이 보안 검사 PASS
+- 싱크보드(파일뷰어) 앱: 보안문서 메일 전송 제한, 네트워크 유실 시 로직 개선
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### TokTokTV 신규 개발
 
-{% raw %}
+- 동영상 뷰어 웹앱(WKWebView) 개발
+- 파일 비동기 다운로드 로직과 파일 미리보기 화면 개발
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### 자체 개선 — QA 배포 프로세스 혁신
 
-{% endraw %}
+**기존 문제**: IPA 파일 직접 전달 → QA 팀이 각 디바이스를 USB로 연결해 iTunes 설치 후 QA 진행, 지연 발생
+
+**해결**: Firebase Hosting 기반 웹 배포로 전환
+- QA 팀에서 디바이스 연결 없이 웹으로 접속하여 QA 진행 가능
+- 단일 빌드 기반의 서버 전환 기능을 개발하여 재빌드 리소스 제거
+
+**성과**
+- 빌드 및 QA 리드타임 단축하여 전체 파이프라인 효율성 극대화
+- 개선된 배포 방식을 **타 부서 QA 표준 가이드라인으로 채택 및 도입**
