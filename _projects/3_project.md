@@ -30,19 +30,19 @@ category: AI
 
 ### 모델 선정 과정
 
-| 모델 | 아키텍처 | 결과 |
-|------|----------|------|
-| Xception | CNN | ❌ 새로운 데이터 분포에 일반화 부족 |
-| EfficientNet-B4 | CNN | ❌ Xception 대비 성능 개선 없음 |
-| SwinV2-Small | ViT | ✅ 최종 선택 |
+| 모델            | 아키텍처 | 결과                                |
+| --------------- | -------- | ----------------------------------- |
+| Xception        | CNN      | ❌ 새로운 데이터 분포에 일반화 부족 |
+| EfficientNet-B4 | CNN      | ❌ Xception 대비 성능 개선 없음     |
+| SwinV2-Small    | ViT      | ✅ 최종 선택                        |
 
 ### AUC 성능 향상
 
-| 모델 | 전략 | AUC |
-|------|------|-----|
-| Xception | FF++ Fine-tuning | 0.6064 |
-| Xception | 전처리만 개선 | 0.6234 → 0.6528 |
-| Xception | 전처리 2단계 + GAP | 0.7048 → 0.7480 |
+| 모델             | 전략                   | AUC                 |
+| ---------------- | ---------------------- | ------------------- |
+| Xception         | FF++ Fine-tuning       | 0.6064              |
+| Xception         | 전처리만 개선          | 0.6234 → 0.6528     |
+| Xception         | 전처리 2단계 + GAP     | 0.7048 → 0.7480     |
 | **SwinV2-Small** | **Power Mean Pooling** | **0.8317 → 0.8363** |
 
 Power Mean Pooling: 가짜 확률 프레임에 가중치를 부여하는 영상 프레임 집계 전략

@@ -22,7 +22,14 @@ layout: default
       <h1 class="hero-name">
         {% if site.title == 'blank' %}
           {% if site.korean_name %}
-            {{- site.korean_name -}}<span class="hero-name-en"> ({{- site.first_name -}}{% if site.middle_name %} {{- site.middle_name -}}{% endif %} {{- site.last_name -}})</span>
+            {{- site.korean_name -}}
+            <span class="hero-name-en">
+              (
+              {{- site.first_name -}}
+              {% if site.middle_name %}{{- site.middle_name -}}{% endif %}
+              {{- site.last_name -}}
+              )</span
+            >
           {% else %}
             <span>{{ site.first_name }}</span>
             {%- if site.middle_name %} {{ site.middle_name }}{% endif %}

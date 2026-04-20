@@ -26,6 +26,7 @@ AFNetworking · Firebase · KakaoLink · TOCropViewController · SDWebImage
 **문제**: 스크롤 시 버벅임, 비디오 자동 재생 딜레이 3~5초
 
 **해결**:
+
 1. 서버로부터 비디오 데이터를 Chunk 단위로 요청
 2. AVPlayer에 실시간으로 전달하여 Streaming 로직 구축 → 초기 재생 대기 시간 축소
 3. NSURLSession을 직접 관리하면서 Cell 재사용 메모리 관리 로직 구축
@@ -37,14 +38,17 @@ AFNetworking · Firebase · KakaoLink · TOCropViewController · SDWebImage
 ### 기타 개발
 
 **첨부파일 비동기 직렬화**
+
 - n개 첨부파일 서버로 병렬 업로드 진행
 - 순서 보장 업로드 직렬화 파이프라인 구축
 
 **이벤트 및 관리자 모드**
+
 - 관리자 타임세일 이벤트 등록
 - 룰렛 이벤트 구현 (파이 개수별 랜덤 360도 × 도착 위치 범위 계산)
 
 **유지보수**
+
 - UIWebView → WKWebView 전환
 - TAS 대용량 푸시 전체 프로세스 개발
 - AppSolid 보안 솔루션 적용

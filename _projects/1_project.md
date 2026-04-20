@@ -23,12 +23,12 @@ LangGraph · FastAPI · MySQL · Qdrant · GoogleSignIn
 
 ### LangGraph 설계
 
-| 노드 | 역할 |
-|------|------|
-| **Intent Agent** | 사용자 질의 의도 분석, 다음 노드 결정 |
-| **Planner Agent** | 여행 일정 수립 |
+| 노드               | 역할                                              |
+| ------------------ | ------------------------------------------------- |
+| **Intent Agent**   | 사용자 질의 의도 분석, 다음 노드 결정             |
+| **Planner Agent**  | 여행 일정 수립                                    |
 | **Retriever Node** | SparseDB, 이미지·텍스트 하이브리드 검색, Reranker |
-| **Executor Node** | 최종 답변 출력 |
+| **Executor Node**  | 최종 답변 출력                                    |
 
 ### 데이터 전처리
 
@@ -38,10 +38,10 @@ LangGraph · FastAPI · MySQL · Qdrant · GoogleSignIn
 
 ### Embedding Model
 
-| 모델 | 용도 | 특징 |
-|------|------|------|
-| **CLIP** | Vision Embedding | 이미지·텍스트 교차 검색, 추상적 문장 검색 |
-| **BGE-M3** | Text Embedding | 다국어 지원, Sparse DB, CLIP 영어 한계 보완 |
+| 모델       | 용도             | 특징                                        |
+| ---------- | ---------------- | ------------------------------------------- |
+| **CLIP**   | Vision Embedding | 이미지·텍스트 교차 검색, 추상적 문장 검색   |
+| **BGE-M3** | Text Embedding   | 다국어 지원, Sparse DB, CLIP 영어 한계 보완 |
 
 ### 아키텍처
 

@@ -370,7 +370,8 @@
   <ninja-keys hideBreadcrumbs noAutoLoadMdIcons placeholder="Type to start searching"></ninja-keys>
   <script src="{{ '/assets/js/search-setup.js' | relative_url | bust_file_cache }}"></script>
   <script src="{{ '/assets/js/search-data.js' | relative_url }}"></script>
-  {{- '' -}}{{- /* shortcut-key.js removed: keep hotkey functional but hide ⌘K display */ -}}
+  {{- '' -}}
+  {{- /* shortcut-key.js removed: keep hotkey functional but hide ⌘K display */ -}}
 {% endif %}
 
 {% if site.newsletter.enabled %}

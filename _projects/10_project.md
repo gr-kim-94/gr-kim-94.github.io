@@ -18,6 +18,7 @@ category: 사이드 프로젝트
 ### 핵심 구현
 
 **View-driven 아키텍처**
+
 - `@Query` 매크로를 활용한 실시간 데이터 동기화 및 UI 업데이트
 - `ModelContext`를 통한 트랜잭션 기반의 CRUD 로직 최적화
 - Charts 프레임워크를 활용한 정비 비용 통계 시각화

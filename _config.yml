@@ -169,7 +169,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: [ "_pages", "_scripts" ]
+include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -232,7 +232,7 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
-  exclude: [ "robots.txt", "assets/js/search/*.js" ]
+  exclude: ["robots.txt", "assets/js/search/*.js"]
 
 # -----------------------------------------------------------------------------
 # Terser
@@ -248,7 +248,7 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [ year, tags, categories ]
+    enabled: [year, tags, categories]
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
@@ -262,8 +262,8 @@ display_categories: []
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [ Kim ]
-  first_name: [ Garam, G. ]
+  last_name: [Kim]
+  first_name: [Garam, G.]
 
   style: apa
   locale: en
@@ -274,7 +274,7 @@ scholar:
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
-  bibtex_filters: [ latex, smallcaps, superscript ]
+  bibtex_filters: [latex, smallcaps, superscript]
 
   replace_strings: true
   join_strings: true
