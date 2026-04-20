@@ -5,6 +5,14 @@ description: LangGraph · Qdrant · PostgreSQL · Ragas 평가 · PM/팀장
 img: projects/2_project.png
 importance: 2
 category: AI
+purpose: "RAG 및 Multi-Agent 기반 LangGraph 설계를 통해 강의 자료 기반 질의응답 챗봇 구현"
+highlights:
+  - "Route Node 분기(Score 0.3~0.5) 및 Long-Term Memory → 검색 쿼리 재작성 구조 설계"
+  - "Markdown+Code Cell 병합으로 VectorDB 고도화, 예제 코드 포함 답변 제공"
+  - "Heuristic Ranking → ReRanker Model 도입으로 NoData 응답 감소"
+outcomes:
+  - "RAGAS Relevancy 0.69 → 0.84 개선, 정성평가에서도 성능 향상 확인"
+  - "모호한 질문에도 정확한 출처 기반 답변 제공"
 ---
 
 <span class="badge bg-primary">SK 네트웍스 FAMILY AI 캠프</span> <span class="badge bg-warning text-dark">60% 기여</span>
@@ -28,9 +36,11 @@ category: AI
 
 ### Ragas 정량 평가 성과
 
-| 지표      | 기존 | 고도화 후 |
-| --------- | ---- | --------- |
-| Recall    | 1.0  | 0.86      |
-| Relevancy | 0.69 | **0.84**  |
+| 지표                | 기존 | 고도화 후 |
+| ------------------- | ---- | --------- |
+| Context Recall      | 1.0  | 0.86      |
+| Context Precision   | 0.89 | 0.85      |
+| Faithfulness        | 0.82 | **0.85**  |
+| Answer Relevancy    | 0.69 | **0.84**  |
 
 고도화 ver. 정성평가에서도 성능 향상 확인

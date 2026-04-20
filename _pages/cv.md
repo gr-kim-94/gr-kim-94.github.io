@@ -41,7 +41,7 @@ description: 경력 및 교육 이력
       <div class="timeline-role">iOS 파트 리더 · SK C&amp;C 현장대리인</div>
       <ul class="timeline-detail">
         <li><strong>SK 계열사 사내 앱 250개 운영</strong> — iOS 파트 리더로 유지보수 총괄</li>
-        <li><strong>QA 배포 프로세스 혁신</strong> — IPA 직접 전달 → Firebase Hosting 웹 배포 전환. 개선 방식을 타 부서 표준 가이드라인으로 확산.</li>
+        <li><strong>QA 배포 프로세스 개선</strong> — IPA 직접 전달 → Firebase Hosting 웹 배포 전환. 개선 방식을 타 부서 표준 가이드라인으로 확산.</li>
         <li><strong>TokTokTV 신규 개발</strong> — WKWebView 동영상 뷰어, 파일 비동기 다운로드</li>
       </ul>
       <div class="timeline-tags">

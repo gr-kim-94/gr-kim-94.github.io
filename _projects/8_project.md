@@ -5,6 +5,14 @@ description: 비디오 스트리밍 최적화 · 재생 딜레이 3~5s→0.5s ·
 img: projects/8_project.png
 importance: 8
 category: iOS
+purpose: "리뷰 콘텐츠를 이미지·비디오 스토리 형태로 확장하여 사용자 참여도 향상 및 미디어 성능 개선"
+highlights:
+  - "ResourceLoader 기반 Player 모듈화, Chunk 단위 서버 요청으로 스트리밍 처리 구조 개선"
+  - "NSURLSession 직접 관리로 Cell 재사용 메모리 관리, 비동기 로딩 구조 설계"
+  - "스토리 게시판 CRUD, 관리자 타임세일 이벤트, 룰렛 랜덤 로직 구현 및 첨부파일 병렬 업로드 직렬화"
+outcomes:
+  - "비디오 초기 재생 딜레이 3~5s → 0.5s 단축"
+  - "스크롤 버벅임 제거로 사용자 경험 및 만족도 향상"
 ---
 
 <span class="badge bg-warning text-dark">포커스원</span> <span class="badge bg-info text-dark">80% 기여</span>

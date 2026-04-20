@@ -5,6 +5,12 @@ description: 차량 정비 관리 · SwiftUI · SwiftData · Charts · View-driv
 img: projects/10_project.png
 importance: 10
 category: 사이드 프로젝트
+purpose: "차량 정비 내역 관리 및 비용 통계 시각화 iOS 앱 개발 및 출시"
+highlights:
+  - "@Query 매크로 기반 실시간 데이터 동기화, ModelContext 트랜잭션 CRUD 최적화"
+  - "Charts 프레임워크를 활용한 정비 비용 통계 시각화"
+outcomes:
+  - "App Store 출시 완료"
 ---
 
 <span class="badge bg-success">App Store 출시</span> <span class="badge bg-secondary">사이드 프로젝트</span>

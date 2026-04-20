@@ -1,31 +1,63 @@
 <div class="col">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" class="project-card-link">
-    <div class="card project-card h-100">
-      <!-- 본문 -->
-      <div class="card-body project-card-body">
-        <div class="project-title-row">
-          {% if project.img %}
-            <img class="project-title-img" src="{{ project.img | prepend: '/assets/img/' | relative_url }}" alt="">
-          {% endif %}
-          <h3 class="card-title project-title">{{ project.title }}</h3>
-        </div>
-
-        <!-- description을 · 기준으로 쪼개 태그 형태로 표시, 오른쪽에 "자세히 →" 인라인 -->
-        {% assign desc_parts = project.description | split: ' · ' %}
-        <div class="project-card-footer">
-          <div class="project-tech-tags">
-            {% for part in desc_parts %}
-              <span class="project-tech-tag">{{ part }}</span>
-            {% endfor %}
-          </div>
-          {% if project.github %}
-            <a href="{{ project.github }}" class="project-icon-link" aria-label="GitHub" onclick="event.stopPropagation()">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          {% endif %}
-          <span class="project-arrow">자세히 →</span>
-        </div>
+  <div class="card project-card h-100">
+    <div class="card-body project-card-body">
+      <!-- 제목 -->
+      <div class="project-title-row">
+        {% if project.img %}
+          <img class="project-title-img" src="{{ project.img | prepend: '/assets/img/' | relative_url }}" alt="">
+        {% endif %}
+        <h3 class="card-title project-title">{{ project.title }}</h3>
       </div>
+
+      <!-- 기술 태그 -->
+      {% assign desc_parts = project.description | split: ' · ' %}
+      <div class="project-tech-tags">
+        {% for part in desc_parts %}
+          <span class="project-tech-tag">{{ part }}</span>
+        {% endfor %}
+      </div>
+
+      <!-- 내용 구분선 -->
+      <hr class="project-divider">
+
+      <!-- 개발 목적 -->
+      {% if project.purpose %}
+        <div class="project-info-section">
+          <span class="project-info-label">개발 목적</span>
+          <p class="project-info-text">{{ project.purpose }}</p>
+        </div>
+      {% endif %}
+
+      <!-- 주요 개발 -->
+      {% if project.highlights %}
+        <div class="project-info-section">
+          <span class="project-info-label">주요 개발</span>
+          <ul class="project-info-list">
+            {% for item in project.highlights %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      <!-- 성과 -->
+      {% if project.outcomes %}
+        <div class="project-info-section">
+          <span class="project-info-label">성과</span>
+          <ul class="project-info-list">
+            {% for item in project.outcomes %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      <!-- 기술 상세 링크 -->
+      {% if project.github %}
+        <a href="{{ project.github }}" class="project-icon-link" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      {% endif %}
     </div>
-  </a>
+  </div>
 </div>

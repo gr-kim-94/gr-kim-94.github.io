@@ -5,6 +5,14 @@ description: Swift 마이그레이션 · AI 회의록 · MQTT · WebRTC · Lotti
 img: projects/6_project.png
 importance: 6
 category: iOS
+purpose: "화상회의 품질·보안·UX 개선 및 Objective-C 코드베이스의 Swift 전환"
+highlights:
+  - "Objective-C → Swift 100% 전환, TDD 기반 Unit Test 선행으로 사이드 이슈 최소화"
+  - "STT 회의록을 LLM에 전달하는 AI 요약 기능, MQTT 하이브리드 스트리밍 수신 구조 설계"
+  - "Lottie 벚꽃 리액션 애니메이션, 회의실 잠금 비밀번호 기반 접근 제어 구현"
+outcomes:
+  - "Swift 100% 전환으로 코드 가독성·개발 생산성 향상, 복잡한 레이아웃 제약 제거로 크래시 감소"
+  - "신규 참가자 회의 맥락 파악 경험 개선, 전 클라이언트 일관된 리액션 애니메이션 제공"
 ---
 
 <span class="badge bg-danger">알서포트</span> <span class="badge bg-info text-dark">40% 기여</span>

@@ -29,13 +29,14 @@ cv:
         - "화상회의 리액션: Lottie 이미지 플로팅 애니메이션 구현, 디자인 알고리즘 문서화 후 Android 파트 전달로 UI
           일관성 확보"
         - "Unity 엔진 메모리 이슈 저하, 사내 협업 도구로 베타 배포 성공"
+        - "[자체 개선] 다국어 언어팩을 Google Drive + Apps Script 기반으로 통합 관리·자동 추출 시스템 구축"
 
     - name: 포커스원 (FocusOne)
       location: 대한민국
       position: iOS 파트 리더 (SK C&C 현장대리인)
       startDate: "2020-08"
       endDate: "2021-08"
-      summary: SK 계열사 사내 앱 250개 운영 및 iOS 파트 리더
+      summary: SK 계열사 사내 앱 150개 운영 및 iOS 파트 리더
       highlights:
         - "SK 계열사 사내 앱 250개 운영 및 유지보수 (iOS 리더)"
         - "QA 배포 방식 개선: IPA 직접 전달 → Firebase Hosting 기반 웹 배포 전환, QA 리드타임 단축"

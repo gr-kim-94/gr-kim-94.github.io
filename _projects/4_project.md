@@ -1,9 +1,17 @@
 ---
 layout: page
 title: 주식 시장 예측 (S&P500)
-description: LightGBM · GARCH · Optuna · Kaggle Silver · 진행 중
+description: LightGBM · GARCH · Optuna · Kaggle Bronze · 평가 진행 중
 importance: 4
 category: AI
+purpose: "S&P 500 일별 수익률 예측 및 리스크 조절 기반 안정적인 투자 전략 개발"
+highlights:
+  - "LightGBM 수익률 예측 + EWMA·GARCH 앙상블 리스크 예측 2트랙 모델 설계"
+  - "Purge K-Fold 전략으로 시계열 Data Leakage 방지, Optuna 하이퍼파라미터 튜닝"
+  - "Winsorization·Rank-Gauss·Robust Scaling 전처리 및 리스크 기반 투자 비중 결정"
+outcomes:
+  - "안정적인 시계열 모델 검증 구조 구축"
+  - "S&P500 실제 주가 기반 성능 평가 진행 중 (~2026년 6월)"
 ---
 
 <span class="badge bg-secondary">Kaggle</span> <span class="badge bg-secondary">🥈 Silver (진행 중 ~2026.06)</span>

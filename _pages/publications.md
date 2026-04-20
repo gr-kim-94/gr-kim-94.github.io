@@ -30,8 +30,8 @@ description: 수상, 대회, 봉사활동 및 기타 활동
       <div class="activity-title">Hecto AI Challenge — 딥페이크 이미지/영상 분류</div>
       <div class="activity-meta">2026.01 · Dacon</div>
       <div class="activity-desc">
-        단일 모델 필수 · 앙상블 불가 조건에서 AUC 0.8363 달성 (상위 11%)<br>
-        SwinV2-Small + Power Mean Pooling · InsightFace+MTCNN 2단계 얼굴 검출
+        SwinV2-Small + Power Mean Pooling · InsightFace+MTCNN 2단계 얼굴 검출<br>
+        AUC 0.8363 달성 (상위 11%)
       </div>
     </div>
     <div class="activity-badge activity-badge--silver">상위 11%</div>

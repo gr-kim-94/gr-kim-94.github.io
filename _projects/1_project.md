@@ -5,6 +5,15 @@ description: Multi-Agent RAG · LangGraph · Qdrant · AWS · 1위 수상
 img: projects/1_project.png
 importance: 1
 category: AI
+purpose: "Multi-Agent RAG 설계를 통해 실서비스 수준의 여행지 추천 및 질의응답 기능 구현"
+highlights:
+  - "LangGraph Intent/Planner Agent 기반 의도 분석 및 여행 일정 수립"
+  - "CLIP + BGE-M3 하이브리드 임베딩, Qdrant SparseDB 하이브리드 검색 및 Reranker 적용"
+  - "AWS(EC2·RDS·S3) + GitHub Actions CI/CD, EventBridge Scheduler·CloudWatch 구축"
+  - "병렬 처리·모델 최적화·SSE 적용으로 레이턴시 개선"
+outcomes:
+  - "TTFT 4~5초 단축, 전체 레이턴시 20초 → 10초 개선"
+  - "SK 네트웍스 FAMILY AI 캠프 최종 프로젝트 1위 수상"
 ---
 
 <span class="badge bg-primary">SK 네트웍스 FAMILY AI 캠프</span> <span class="badge bg-success">🏆 1위 수상</span>

@@ -4,6 +4,14 @@ title: 딥페이크 이미지/영상 분류
 description: PyTorch · SwinV2 · InsightFace · MTCNN · Hecto AI Challenge 상위 11%
 importance: 3
 category: AI
+purpose: "단일 모델 제약 조건에서 End-to-End 딥페이크 분류 파이프라인 구축"
+highlights:
+  - "이미지/영상 분기 → 프레임 샘플링 → InsightFace+MTCNN 2단계 얼굴 검출 → SwinV2 분류 파이프라인"
+  - "SSIM 기반 중복 프레임 제거 및 Power Mean Pooling 기반 영상 프레임 집계 전략 설계"
+  - "Xception(CNN) 대비 SwinV2(ViT) 선정 근거 실험 분석"
+outcomes:
+  - "딥페이크 분류 AUC 0.84 달성 (Hecto AI Challenge 상위 11%)"
+  - "AUC +0.15 개선 (0.6064 → 0.8363)"
 ---
 
 <span class="badge bg-secondary">Dacon</span> <span class="badge bg-warning text-dark">🏅 상위 11%</span>
