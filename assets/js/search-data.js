@@ -52,7 +52,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-주식-시장-예측-s-amp-p500",
           title: '주식 시장 예측 (S&amp;amp;P500)',
-          description: "LightGBM · GARCH · Optuna · Kaggle Silver · 진행 중",
+          description: "LightGBM · GARCH · Optuna · Kaggle Bronze · 평가 진행 중",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-rfice-가상오피스-서비스",
@@ -65,9 +65,9 @@ ninja.data = [{
           description: "Swift 마이그레이션 · AI 회의록 · MQTT · WebRTC · Lottie 애니메이션",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-sk-c-amp-c-사내-앱-250개-운영",
-          title: 'SK C&amp;amp;C 사내 앱 250개 운영',
-          description: "iOS 파트 리더 · QA 프로세스 개선 · Firebase Hosting · Objective-C · Swift",
+            },},{id: "projects-sk-c-amp-c-사내-앱-150개-운영",
+          title: 'SK C&amp;amp;C 사내 앱 150개 운영',
+          description: "iOS 파트 리더 · QA 프로세스 개선 · Firebase Hosting · Objective-C · Swift · AppGroups",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-마이홈플러스-스토리-개발",
