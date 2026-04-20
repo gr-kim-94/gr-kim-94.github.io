@@ -24,7 +24,7 @@ jobs:
           @shopify/prettier-plugin-liquid
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --write
+        run: npx prettier . --check
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
@@ -47,6 +47,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           event-type: prettier-failed-on-pr
-          client-payload: "{\"pr_number\": \"${{ github.event.number }}\",
-            \"artifact_url\": \"${{ steps.artifact-upload.outputs.artifact-url
-            }}\", \"run_id\": \"${{ github.run_id }}\"}"
+          client-payload: '{"pr_number": "${{ github.event.number }}",
+            "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url
+            }}", "run_id": "${{ github.run_id }}"}'

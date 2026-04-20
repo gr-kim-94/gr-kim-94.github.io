@@ -2,7 +2,7 @@ name: Deploy gr-kim-94 site to Pages
 
 on:
   push:
-    branches: [ "main" ] # master가 아닌 main으로 확실히 지정
+    branches: ["main"] # master가 아닌 main으로 확실히 지정
   workflow_dispatch:
 
 permissions:
