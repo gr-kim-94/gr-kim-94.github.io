@@ -35,6 +35,16 @@ ninja.data = [{
           description: "차량 정비 관리 · SwiftUI · SwiftData · Charts · View-driven 아키텍처",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
+            },},{id: "projects-삼호건설-s-mbass",
+          title: '삼호건설 S-mBASS',
+          description: "DB · Objective-C · SQLite",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_project/";
+            },},{id: "projects-서울도시가스-장비-입출고-관리",
+          title: '서울도시가스 장비 입출고 관리',
+          description: "바코드 인식 · 실시간 장비 입출고 · Objective-C · ZXingObjC · AVFoundation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_project/";
             },},{id: "projects-한국-여행지-추천-서비스",
           title: '한국 여행지 추천 서비스',
           description: "Multi-Agent RAG · LangGraph · Qdrant · AWS · 1위 수상",
