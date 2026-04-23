@@ -10,7 +10,6 @@ profile:
   image_circular: false
   more_info: >
     <div class="hero-contacts">
-      <span class="hero-contact-item"><span class="hero-contact-label">Email</span><a href="mailto:kimmuuulll@gmail.com">kimmuuulll@gmail.com</a></span>
       <span class="hero-contact-item"><span class="hero-contact-label">GitHub</span><a href="https://github.com/gr-kim-94">github.com/gr-kim-94</a></span>
       <span class="hero-contact-item"><span class="hero-contact-label">Blog</span><a href="https://itstudentstudy.tistory.com">itstudentstudy.tistory.com</a></span>
     </div>
