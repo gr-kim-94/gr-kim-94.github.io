@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/activities/";
           },
-        },{id: "projects-차비서-app-store-출시",
-          title: '차비서 (App Store 출시)',
-          description: "차량 정비 관리 · SwiftUI · SwiftData · Charts · View-driven 아키텍처",
+        },{id: "projects-차비서",
+          title: '차비서',
+          description: "차량 정비 관리 · iOS · SwiftUI · SwiftData · Charts · View-driven 아키텍처",
           section: "Projects",handler: () => {
               window.location.href = "/projects/10_project/";
             },},{id: "projects-삼호건설-s-mbass",
@@ -45,6 +45,11 @@ ninja.data = [{
           description: "바코드 인식 · 실시간 장비 입출고 · Objective-C · ZXingObjC · AVFoundation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/12_project/";
+            },},{id: "projects-펫로그",
+          title: '펫로그',
+          description: "시니어펫 건강 케어 · Android · iOS · React Native · Expo · Supabase",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/13_project/";
             },},{id: "projects-한국-여행지-추천-서비스",
           title: '한국 여행지 추천 서비스',
           description: "Multi-Agent RAG · LangGraph · Qdrant · AWS · 1위 수상",
@@ -85,9 +90,9 @@ ninja.data = [{
           description: "비디오 스트리밍 최적화 · 재생 딜레이 3~5s→0.5s · Objective-C · AVPlayer",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-앞바르여행-app-store-출시",
-          title: '앞바르여행 (App Store 출시)',
-          description: "제주도 해안도로 경로 추천 · Swift · NMapsMap · Kakao Local API · Firebase",
+            },},{id: "projects-앞바르여행",
+          title: '앞바르여행',
+          description: "제주도 해안도로 경로 추천 · iOS · Swift · NMapsMap · Kakao Local API · Firebase",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
