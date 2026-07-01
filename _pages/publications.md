@@ -38,16 +38,16 @@ description: 수상, 대회, 봉사활동 및 기타 활동
   </div>
 
   <div class="activity-item">
-    <div class="activity-rank">🥉</div>
+    <div class="activity-rank">🥈</div>
     <div class="activity-body">
-      <div class="activity-title">Kaggle — Hull Tactical Market Prediction (S&amp;P500)</div>
-      <div class="activity-meta">2026 진행 중 (~2026.06)</div>
+      <div class="activity-title">Hull Tactical Market Prediction (S&amp;P500) - S&P500 주식 예측 모델</div>
+      <div class="activity-meta">2025.11 ~ 2025.12 · 결과 발표: 2026.06 · Kaggle</div>
       <div class="activity-desc">
         S&amp;P 500 일별 수익률 예측 및 리스크 조절 기반 투자 전략 개발<br>
         LightGBM (수익) + LGBM + EWMA + GARCH 앙상블 (리스크)
       </div>
     </div>
-    <div class="activity-badge activity-badge--bronze">Bronze</div>
+    <div class="activity-badge activity-badge--silver">Silver</div>
   </div>
 
   <div class="activity-item">

@@ -7,6 +7,17 @@
           <img class="project-title-img" src="{{ project.img | prepend: '/assets/img/' | relative_url }}" alt="">
         {% endif %}
         <h3 class="card-title project-title">{{ project.title }}</h3>
+        {% if project.website %}
+          <a
+            href="{{ project.website }}"
+            class="project-title-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="{{ project.title }} 바로가기"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        {% endif %}
       </div>
 
       <!-- 기술 태그 -->

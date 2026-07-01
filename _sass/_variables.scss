@@ -50,3 +50,6 @@ $back-to-top-width: $back-to-top-diameter;
 
 // Max width default
 $max-content-width: 930px !default;
+
+// 고정 네비게이션 바 높이 (프로그래스 바 위치, sticky 점프 네비 오프셋 기준)
+$navbar-height: 56px !default;

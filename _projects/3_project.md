@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 딥페이크 이미지/영상 분류
-description: PyTorch · SwinV2 · InsightFace · MTCNN · Hecto AI Challenge 상위 11%
+description: Hecto AI Challenge · PyTorch · SwinV2 · InsightFace · MTCNN · Dacon 상위 11%
 importance: 3
 category: AI
 purpose: "단일 모델 제약 조건에서 End-to-End 딥페이크 분류 파이프라인 구축"

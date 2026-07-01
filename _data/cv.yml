@@ -90,10 +90,10 @@ cv:
       summary: "Microsoft SwinV2-Small 모델, Power Mean Pooling 전략으로 AUC 0.8363 달성.
         Dacon 대회."
 
-    - title: "[Bronze] Kaggle - Hull Tactical Market Prediction"
+    - title: "[Silver] Kaggle - Hull Tactical Market Prediction"
       date: "2026"
       awarder: Kaggle
-      summary: "S&P 500 일별 수익률 예측. LightGBM + EWMA + GARCH 앙상블. 평가 진행 중 (~26년 6월)."
+      summary: "S&P 500 일별 수익률 예측. LightGBM + EWMA + GARCH 앙상블."
 
     - title: Superstar 인증서
       date: "2017-02"

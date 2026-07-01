@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 주식 시장 예측 (S&P500)
-description: LightGBM · GARCH · Optuna · Kaggle Bronze · 평가 진행 중
+description: Hull Tactical Market Prediction · LightGBM · GARCH · Optuna · Kaggle Silver
 importance: 4
 category: AI
 purpose: "S&P 500 일별 수익률 예측 및 리스크 조절 기반 안정적인 투자 전략 개발"
@@ -11,12 +11,14 @@ highlights:
   - "Winsorization·Rank-Gauss·Robust Scaling 전처리 및 리스크 기반 투자 비중 결정"
 outcomes:
   - "안정적인 시계열 모델 검증 구조 구축"
-  - "S&P500 실제 주가 기반 성능 평가 진행 중 (~2026년 6월)"
+  - "S&P500 실제 주가 평가 결과 - Hull Tactical Market Prediction 수상 🥈"
 ---
 
-<span class="badge bg-secondary">Kaggle</span> <span class="badge bg-secondary">🥈 Silver (진행 중 ~2026.06)</span>
+<span class="badge bg-secondary">Kaggle</span> <span class="badge bg-secondary">🥈 Silver</span>
 
 **Hull Tactical - Market Prediction**
+
+개발 기간: 2025.11 ~ 2025.12 · 결과 발표: 2026.06
 
 S&P 500 일별 수익률 예측 및 리스크 조절 기반 안정적인 투자 전략 개발
 
@@ -38,4 +40,4 @@ S&P 500 일별 수익률 예측 및 리스크 조절 기반 안정적인 투자 
 3. **리스크 예측**: 시장 불확실성 추정 (LGBM + EWMA + GARCH)
 4. **안정적인 투자 비중 결정**
 
-S&P500 실제 주가로 평가 진행 중 (~2026년 6월 16일)
+S&P500 실제 주가 평가 결과 Kaggle Silver 수상 🥈
