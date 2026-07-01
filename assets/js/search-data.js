@@ -50,6 +50,11 @@ ninja.data = [{
           description: "시니어펫 건강 케어 · Android · iOS · React Native · Expo · Supabase",
           section: "Projects",handler: () => {
               window.location.href = "/projects/13_project/";
+            },},{id: "projects-월드컵-내기",
+          title: '월드컵 내기',
+          description: "2026 FIFA 월드컵 캐주얼 내기 · 친목 도모 · 커피내기 · Next.js · Postgres · Vercel · Neon",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/14_project/";
             },},{id: "projects-한국-여행지-추천-서비스",
           title: '한국 여행지 추천 서비스',
           description: "Multi-Agent RAG · LangGraph · Qdrant · AWS · 1위 수상",
@@ -62,12 +67,12 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-딥페이크-이미지-영상-분류",
           title: '딥페이크 이미지/영상 분류',
-          description: "PyTorch · SwinV2 · InsightFace · MTCNN · Hecto AI Challenge 상위 11%",
+          description: "Hecto AI Challenge · PyTorch · SwinV2 · InsightFace · MTCNN · Dacon 상위 11%",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-주식-시장-예측-s-amp-p500",
           title: '주식 시장 예측 (S&amp;amp;P500)',
-          description: "LightGBM · GARCH · Optuna · Kaggle Bronze · 평가 진행 중",
+          description: "Hull Tactical Market Prediction · LightGBM · GARCH · Optuna · Kaggle Silver",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-rfice-가상오피스-서비스",
