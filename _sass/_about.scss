@@ -347,11 +347,20 @@
 
 .project-card {
   display: block;
+  position: relative; // 오버레이 상세 링크의 기준
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--global-card-border-color, var(--global-divider-color));
   background-color: var(--global-card-bg-color);
   height: 100%;
+}
+
+// 카드 전체를 덮는 상세 페이지 링크
+.project-card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  // 스크린리더용 라벨만 있고 시각적으로는 투명
 }
 
 // 이미지가 있을 때
@@ -496,6 +505,8 @@
 .project-title-link {
   flex: 0 0 auto;
   align-self: center;
+  position: relative; // 오버레이 상세 링크 위에서 개별 클릭
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -545,6 +556,8 @@
 }
 
 .project-icon-link {
+  position: relative; // 오버레이 상세 링크 위에서 개별 클릭
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;

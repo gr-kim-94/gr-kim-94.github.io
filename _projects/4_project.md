@@ -11,7 +11,7 @@ highlights:
   - "Winsorization·Rank-Gauss·Robust Scaling 전처리 및 리스크 기반 투자 비중 결정"
 outcomes:
   - "안정적인 시계열 모델 검증 구조 구축"
-  - "S&P500 실제 주가 평가 결과 - Hull Tactical Market Prediction 수상 🥈"
+  - "S&P500 실제 주가 평가 결과 - Hull Tactical Market Prediction 🥈"
 ---
 
 <span class="badge bg-secondary">Kaggle</span> <span class="badge bg-secondary">🥈 Silver</span>
@@ -40,4 +40,4 @@ S&P 500 일별 수익률 예측 및 리스크 조절 기반 안정적인 투자 
 3. **리스크 예측**: 시장 불확실성 추정 (LGBM + EWMA + GARCH)
 4. **안정적인 투자 비중 결정**
 
-S&P500 실제 주가 평가 결과 Kaggle Silver 수상 🥈
+S&P500 실제 주가 평가 결과 - Hull Tactical Market Prediction 🥈

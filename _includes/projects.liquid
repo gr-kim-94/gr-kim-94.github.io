@@ -1,5 +1,7 @@
 <div class="col">
   <div class="card project-card h-100">
+    <!-- 카드 전체를 상세 페이지로 연결하는 오버레이 링크 (내부 ">" · GitHub 링크는 z-index로 위에 둠) -->
+    <a href="{{ project.url | relative_url }}" class="project-card-link" aria-label="{{ project.title }} 상세 보기"></a>
     <div class="card-body project-card-body">
       <!-- 제목 -->
       <div class="project-title-row">

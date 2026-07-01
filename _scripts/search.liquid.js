@@ -102,6 +102,8 @@ ninja.data = [
   {%- endfor -%}
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}
+      {%- comment -%} 검색 목록에서 제외: email, RSS Feed {%- endcomment -%}
+      {%- if social[0] == "email" or social[0] == "rss_icon" -%}{%- continue -%}{%- endif -%}
       {%- case social[0] -%}
         {%- when "acm_id" -%}
           {%- assign social_id = "social-acm" -%}
@@ -294,6 +296,10 @@ ninja.data = [
           {%- assign social_id = "social-zotero" -%}
           {%- assign social_title = "Zotero" -%}
           {%- capture social_url %}"https://www.zotero.org/{{ social[1] }}"{% endcapture -%}
+        {%- when "custom_social" -%}
+          {%- assign social_id = "social-custom" -%}
+          {%- assign social_title = social[1].title -%}
+          {%- capture social_url %}"{{ social[1].url }}"{% endcapture -%}
         {%- else -%}
           {%- assign social_id = "social-" | append: social[0] -%}
           {%- assign social_title = social[0] | capitalize -%}

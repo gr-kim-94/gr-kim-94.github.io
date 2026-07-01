@@ -11,7 +11,7 @@ highlights:
   - "Xception(CNN) 대비 SwinV2(ViT) 선정 근거 실험 분석"
 outcomes:
   - "딥페이크 분류 AUC 0.84 달성 (Hecto AI Challenge 상위 11%)"
-  - "AUC +0.15 개선 (0.6064 → 0.8363)"
+  - "AUC +0.23 개선 (0.6064 → 0.8363)"
 ---
 
 <span class="badge bg-secondary">Dacon</span> <span class="badge bg-warning text-dark">🏅 상위 11%</span>
