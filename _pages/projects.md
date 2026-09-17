@@ -5,7 +5,7 @@ permalink: /projects/
 description: AI 및 iOS 개발 프로젝트 모음
 nav: true
 nav_order: 3
-display_categories: [AI, iOS, 사이드 프로젝트]
+display_categories: [AI, iOS, 운영 프로젝트]
 horizontal: false
 ---
 

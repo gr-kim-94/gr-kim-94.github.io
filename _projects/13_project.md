@@ -4,7 +4,7 @@ title: 펫로그
 description: 시니어펫 건강 케어 · Android · iOS · React Native · Expo · Supabase
 img: projects/13_project.png
 importance: 1
-category: 사이드 프로젝트
+category: 운영 프로젝트
 purpose: "시니어펫 일일 건강 기록과 추이 확인을 위한 모바일 앱 개발 및 출시"
 highlights:
   - "Expo Router와 Supabase를 조합해 인증, 온보딩, 탭 기반 사용자 흐름을 구현"
@@ -15,7 +15,7 @@ outcomes:
   - "시니어펫 보호자 건강 체크리스트 관리 부담 완화"
 ---
 
-<span class="badge bg-success">Play Store 출시</span> <span class="badge bg-success">App Store 출시</span> <span class="badge bg-secondary">사이드 프로젝트</span>
+<span class="badge bg-success">Play Store 출시</span> <span class="badge bg-success">App Store 출시</span> <span class="badge bg-secondary">운영 프로젝트</span>
 
 **React Native · Expo Router · Supabase**
 

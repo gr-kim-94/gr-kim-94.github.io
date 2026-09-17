@@ -5,7 +5,7 @@ description: 2026 FIFA 월드컵 캐주얼 내기 · 친목 도모 · 커피내�
 img: projects/14_project.png
 website: https://betting-worldcup.vercel.app
 importance: 0
-category: 사이드 프로젝트
+category: 운영 프로젝트
 purpose: "2026 FIFA 월드컵 경기 일정 기반 캐주얼 내기(betting pool) 웹 앱 개발"
 highlights:
   - "닉네임 + 비밀번호 인증(bcrypt 해시, jose JWT httpOnly 쿠키 세션)으로 개인정보 없이 참여"
@@ -16,7 +16,7 @@ outcomes:
   - "무료 API 티어 한도 내에서 대진 확정 시점 즉시 반영하는 동기화 체계 구축"
 ---
 
-<span class="badge bg-secondary">사이드 프로젝트</span> <span class="badge bg-info">친목 도모</span> <span class="badge bg-info">커피내기</span>
+<span class="badge bg-secondary">운영 프로젝트</span> <span class="badge bg-info">친목 도모</span> <span class="badge bg-info">커피내기</span>
 
 **Next.js · Postgres · Vercel · Neon**
 
