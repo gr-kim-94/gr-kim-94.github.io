@@ -13,6 +13,22 @@ description: 경력 및 교육 이력
 
   <div class="timeline-item">
     <div class="timeline-date">
+      <span>2026.09</span>
+      <span>현재</span>
+    </div>
+    <div class="timeline-dot timeline-dot--accent"></div>
+    <div class="timeline-content">
+      <div class="timeline-company">메이트로그 (Matelog)</div>
+      <div class="timeline-role">대표 · 개인사업자(프리랜서)</div>
+      <ul class="timeline-detail">
+        <li><strong>자체 앱 개발·운영</strong> — 앱 서비스 개발 및 운영</li>
+        <li><strong>AX 보조강사(코치)</strong> — 위탁 계약 기반 대기업 임원 대상 AI 실무 교육</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">
       <span>2021.09</span>
       <span>2024.07</span>
     </div>
@@ -38,9 +54,9 @@ description: 경력 및 교육 이력
     <div class="timeline-dot"></div>
     <div class="timeline-content">
       <div class="timeline-company">포커스원 (FocusOne)</div>
-      <div class="timeline-role">iOS 파트 리더 · SK C&amp;C 현장대리인</div>
+      <div class="timeline-role">iOS 파트 리더 · SK C&amp;C 톡톡모바일팀 현장대리인</div>
       <ul class="timeline-detail">
-        <li><strong>SK 계열사 사내 앱 250개 운영</strong> — iOS 파트 리더로 유지보수 총괄</li>
+        <li><strong>SK 계열사 사내 앱 150개 이상 운영</strong> — iOS 파트 리더로 유지보수 총괄</li>
         <li><strong>QA 배포 프로세스 개선</strong> — IPA 직접 전달 → Firebase Hosting 웹 배포 전환. 개선 방식을 타 부서 표준 가이드라인으로 확산.</li>
         <li><strong>TokTokTV 신규 개발</strong> — WKWebView 동영상 뷰어, 파일 비동기 다운로드</li>
       </ul>
@@ -53,7 +69,7 @@ description: 경력 및 교육 이력
   <div class="timeline-item">
     <div class="timeline-date">
       <span>2017.04</span>
-      <span>2020.08</span>
+      <span>2020.07</span>
     </div>
     <div class="timeline-dot"></div>
     <div class="timeline-content">
@@ -82,14 +98,16 @@ description: 경력 및 교육 이력
   <div class="timeline-item">
     <div class="timeline-date">
       <span>2025.09</span>
-      <span>2026.03</span>
+      <span>2026.03.31</span>
     </div>
     <div class="timeline-dot timeline-dot--accent"></div>
     <div class="timeline-content">
       <div class="timeline-company">SK 네트웍스 Family AI 캠프 21기</div>
+      <div class="timeline-role">수료 · 최종 프로젝트 1위 (팀장)</div>
       <ul class="timeline-detail">
         <li>Python · Scikit-learn · Pandas · RAG · LangGraph · VectorDB · LLM Evaluation</li>
         <li>AI 에이전트 워크플로우 설계, 챗봇 서비스 개발</li>
+        <li>기업 참여 프로젝트 팀 우수상 수상</li>
       </ul>
       <div class="timeline-tags">
         <span>Python</span><span>RAG</span><span>LangGraph</span><span>Qdrant</span><span>FastAPI</span>

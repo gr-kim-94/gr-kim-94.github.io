@@ -13,6 +13,16 @@ cv:
       username: gr-kim-94
 
   work:
+    - name: 메이트로그 (Matelog)
+      location: 대한민국
+      position: 대표 / 개인사업자(프리랜서)
+      startDate: "2026-09-01"
+      endDate: ""
+      summary: 자체 앱 개발·운영 및 위탁 계약 AX 보조강사(코치)
+      highlights:
+        - "자체 앱 서비스 개발·운영"
+        - "위탁 계약 기반 대기업 임원 대상 AI 실무 교육 보조강사(코치)"
+
     - name: 알서포트 (Rsupport)
       location: 대한민국
       position: iOS Developer (모바일개발 2팀)
@@ -32,12 +42,12 @@ cv:
 
     - name: 포커스원 (FocusOne)
       location: 대한민국
-      position: iOS 파트 리더 (SK C&C 현장대리인)
+      position: iOS 파트 리더 (SK C&C 톡톡모바일팀 현장대리인)
       startDate: "2020-08"
       endDate: "2021-08"
-      summary: SK 계열사 사내 앱 150개 운영 및 iOS 파트 리더
+      summary: SK 계열사 사내 앱 150개 이상 운영 및 iOS 파트 리더
       highlights:
-        - "SK 계열사 사내 앱 250개 운영 및 유지보수 (iOS 리더)"
+        - "SK 계열사 사내 앱 150개 이상 운영 및 유지보수 (iOS 리더)"
         - "QA 배포 방식 개선: IPA 직접 전달 → Firebase Hosting 기반 웹 배포 전환, QA 리드타임 단축"
         - "단일 빌드 기반 서버 전환 기능 개발로 재빌드 리소스 제거"
         - "TokTokTV 신규 개발: WKWebView 기반 동영상 뷰어, 파일 비동기 다운로드 로직 구현"
@@ -47,7 +57,7 @@ cv:
       location: 대한민국
       position: iOS Developer (소프트웨어개발팀)
       startDate: "2017-04"
-      endDate: "2020-08"
+      endDate: "2020-07"
       summary: 다양한 클라이언트 iOS 앱 개발 및 유지보수
       highlights:
         - "마이홈플러스 스토리: 비디오 스트리밍 최적화 (재생 딜레이 3~5s → 0.5s), 스크롤 버벅임 제거"
@@ -62,7 +72,7 @@ cv:
       area: AI (RAG, LangGraph, LLM, VectorDB)
       studyType: 교육
       startDate: "2025-09"
-      endDate: "2026-03"
+      endDate: "2026-03-31"
       score: ""
       courses:
         - "Python · Scikit-learn · Pandas · RAG · LangGraph · VectorDB · LLM
@@ -79,7 +89,7 @@ cv:
         - "컴퓨터공학 전공"
 
   awards:
-    - title: "[1위 수상] SK 네트웍스 AI 캠프 - 한국 여행지 추천 서비스"
+    - title: "[최종 1위] SK 네트웍스 AI 캠프 기업 참여 프로젝트 팀 우수상 - 한국 여행지 추천 서비스"
       date: "2026-03"
       awarder: SK 네트웍스
       summary: "Multi-Agent RAG, LangGraph 기반 방한 외국인을 위한 여행지 추천 서비스. 팀장/AI&Backend 담당."
@@ -87,11 +97,11 @@ cv:
     - title: "[상위 11%] Hecto AI Challenge - 딥페이크 이미지/영상 분류"
       date: "2026-01"
       awarder: Hecto
-      summary: "Microsoft SwinV2-Small 모델, Power Mean Pooling 전략으로 AUC 0.8363 달성.
+      summary: "Microsoft SwinV2-Small 모델, Power Mean Pooling 전략으로 AUC 0.832 달성.
         Dacon 대회."
 
     - title: "[Silver] Kaggle - Hull Tactical Market Prediction"
-      date: "2026"
+      date: "2026-06"
       awarder: Kaggle
       summary: "S&P 500 일별 수익률 예측. LightGBM + EWMA + GARCH 앙상블."
 
@@ -193,6 +203,13 @@ cv:
       summary: "몽골 학교로 파견되어 고등학생들에게 포토샵, PPT 교육 진행. 네트워크 이슈를 USB 대체로 해결."
 
   projects:
+    - name: Triver (서비스 종료)
+      summary: "AI 캠프 팀 프로젝트(한국 여행지 추천 서비스)를 앱 서비스로 전환해 배포. 현재 서비스 종료."
+      highlights:
+        - "Multi-Agent RAG · LangGraph · Qdrant · FastAPI · AWS"
+      startDate: "2026-09-29"
+      endDate: ""
+
     - name: 앞바르여행 (App Store 출시)
       summary: "제주도 해안도로 경로 추천 서비스. 시계/반시계 방향 최적 경로 알고리즘 구현."
       highlights:

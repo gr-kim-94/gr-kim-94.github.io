@@ -10,8 +10,8 @@ highlights:
   - "SSIM 기반 중복 프레임 제거 및 Power Mean Pooling 기반 영상 프레임 집계 전략 설계"
   - "Xception(CNN) 대비 SwinV2(ViT) 선정 근거 실험 분석"
 outcomes:
-  - "딥페이크 분류 AUC 0.84 달성 (Hecto AI Challenge 상위 11%)"
-  - "AUC +0.23 개선 (0.6064 → 0.8363)"
+  - "딥페이크 분류 AUC 0.832 달성 (Hecto AI Challenge 상위 11%)"
+  - "AUC +0.23 개선 (0.6064 → 0.832)"
 ---
 
 <span class="badge bg-secondary">Dacon</span> <span class="badge bg-warning text-dark">🏅 상위 11%</span>
@@ -46,11 +46,11 @@ outcomes:
 
 ### AUC 성능 향상
 
-| 모델             | 전략                   | AUC                 |
-| ---------------- | ---------------------- | ------------------- |
-| Xception         | FF++ Fine-tuning       | 0.6064              |
-| Xception         | 전처리만 개선          | 0.6234 → 0.6528     |
-| Xception         | 전처리 2단계 + GAP     | 0.7048 → 0.7480     |
-| **SwinV2-Small** | **Power Mean Pooling** | **0.8317 → 0.8363** |
+| 모델             | 전략                   | AUC                |
+| ---------------- | ---------------------- | ------------------ |
+| Xception         | FF++ Fine-tuning       | 0.6064             |
+| Xception         | 전처리만 개선          | 0.6234 → 0.6528    |
+| Xception         | 전처리 2단계 + GAP     | 0.7048 → 0.7480    |
+| **SwinV2-Small** | **Power Mean Pooling** | **0.8317 → 0.832** |
 
 Power Mean Pooling: 가짜 확률 프레임에 가중치를 부여하는 영상 프레임 집계 전략
