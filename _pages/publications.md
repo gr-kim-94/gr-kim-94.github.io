@@ -15,13 +15,13 @@ description: 수상, 대회, 봉사활동 및 기타 활동
     <div class="activity-rank">🏆</div>
     <div class="activity-body">
       <div class="activity-title">SK 네트웍스 AI 캠프 — 한국 여행지 추천 서비스</div>
-      <div class="activity-meta">2026.03 · SK 네트웍스</div>
+      <div class="activity-meta">2026.03 · SK 네트웍스 · 기업 참여 프로젝트 팀 우수상</div>
       <div class="activity-desc">
         방한 외국인을 위한 Multi-Agent RAG 여행지 추천 서비스 · 팀장/AI&amp;Backend (5인, 2개월)<br>
         CLIP+BGE-M3 하이브리드 임베딩 · Qdrant · LangGraph · AWS 구축
       </div>
     </div>
-    <div class="activity-badge activity-badge--gold">1위</div>
+    <div class="activity-badge activity-badge--gold">최종 1위</div>
   </div>
 
   <div class="activity-item">
@@ -31,7 +31,7 @@ description: 수상, 대회, 봉사활동 및 기타 활동
       <div class="activity-meta">2026.01 · Dacon</div>
       <div class="activity-desc">
         SwinV2-Small + Power Mean Pooling · InsightFace+MTCNN 2단계 얼굴 검출<br>
-        AUC 0.8363 달성 (상위 11%)
+        AUC 0.832 달성 (상위 11%)
       </div>
     </div>
     <div class="activity-badge activity-badge--silver">상위 11%</div>
@@ -48,6 +48,17 @@ description: 수상, 대회, 봉사활동 및 기타 활동
       </div>
     </div>
     <div class="activity-badge activity-badge--silver">Silver</div>
+  </div>
+
+  <div class="activity-item activity-item--static">
+    <div class="activity-rank">🚀</div>
+    <div class="activity-body">
+      <div class="activity-title">AX 인재전쟁 — 마이리얼트립 트랙</div>
+      <div class="activity-meta">본선 2026.07.18</div>
+      <div class="activity-desc">
+        마이리얼트립 트랙 참가 · 예선 통과 후 본선 진출
+      </div>
+    </div>
   </div>
 
   <div class="activity-item">
@@ -110,6 +121,15 @@ description: 수상, 대회, 봉사활동 및 기타 활동
 ## 기타 활동
 
 <div class="activity-list">
+
+  <div class="activity-item activity-item--static">
+    <div class="activity-rank">🎓</div>
+    <div class="activity-body">
+      <div class="activity-title">대기업 임원 대상 AI 실무 교육 보조강사(코치)</div>
+      <div class="activity-meta">2026.09 – 현재</div>
+      <div class="activity-desc">위탁 계약 기반 AI 실무 교육 보조강사(코치)</div>
+    </div>
+  </div>
 
   <div class="activity-item activity-item--static">
     <div class="activity-rank">🚶</div>

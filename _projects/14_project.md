@@ -1,9 +1,8 @@
 ---
 layout: page
 title: 월드컵 내기
-description: 2026 FIFA 월드컵 캐주얼 내기 · 친목 도모 · 커피내기 · Next.js · Postgres · Vercel · Neon
+description: 2026 FIFA 월드컵 점수 예측 웹 서비스 · 서비스 종료 · Next.js · Postgres · Vercel · Neon
 img: projects/14_project.png
-website: https://betting-worldcup.vercel.app
 importance: 0
 category: 운영 프로젝트
 purpose: "2026 FIFA 월드컵 경기 일정 기반 캐주얼 내기(betting pool) 웹 앱 개발"
@@ -12,11 +11,12 @@ highlights:
   - "football-data.org 피드 미러링 동기화 + Vercel Cron 적응형 스케줄링(핫 윈도우 5분, 스마트 스킵)"
   - "나라 필터 일정 리스트, 내기 생성(판돈·승자 규칙 선택), 초대 링크 참여, 승자 정산·결과 공유"
 outcomes:
-  - "스코어를 예측해 승자를 가리는 서비스로 직장·친구 사이 친목 도모"
+  - "스코어를 예측해 승자를 가리는 서비스로 직장·친구 사이 친목 도모에 활용"
   - "무료 API 티어 한도 내에서 대진 확정 시점 즉시 반영하는 동기화 체계 구축"
+  - "현재 서비스 종료"
 ---
 
-<span class="badge bg-secondary">운영 프로젝트</span> <span class="badge bg-info">친목 도모</span> <span class="badge bg-info">커피내기</span>
+<span class="badge bg-dark">서비스 종료</span> <span class="badge bg-info">친목 도모</span> <span class="badge bg-info">커피내기</span>
 
 **Next.js · Postgres · Vercel · Neon**
 
@@ -36,10 +36,4 @@ outcomes:
 ### 운영 및 품질
 
 - 무료 API 티어 한도 내에서 대진 확정 시점을 즉시 반영하는 동기화 체계를 구축
-- 스코어를 예측해 승자를 가리는 서비스로 직장·친구 사이 친목 도모에 활용
-
----
-
-### Website
-
-[월드컵 내기 바로가기](https://betting-worldcup.vercel.app)
+- 스코어를 예측해 승자를 가리는 서비스로 직장·친구 사이 친목 도모에 활용했으며, 현재는 서비스를 종료

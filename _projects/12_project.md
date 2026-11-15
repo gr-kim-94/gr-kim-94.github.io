@@ -6,7 +6,7 @@ importance: 12
 category: iOS
 purpose: "바코드 인식을 활용하여 실시간으로 장비 대여~반납 입출고 사이클을 관리하는 서비스 신규 개발"
 highlights:
-  - "AVFoundation 기반 바코드 포맷 인식 및 ZXingObjC 연동으로 다양한 바코드 지원"
+  - "AVFoundation·ZXingObjC 기반 바코드 인식 로직 직접 구현, 다양한 바코드 포맷 지원"
   - "실시간 장비 대여~반납 입출고 사이클 개발"
   - "유저 정보 + 카메라 세션 비동기 처리로 UI 프리징 제거"
 outcomes:

@@ -1,16 +1,16 @@
 ---
 layout: page
-title: SK C&C 사내 앱 150개 운영
+title: SK C&C 사내 앱 150개 이상 운영
 description: iOS 파트 리더 · QA 프로세스 개선 · Firebase Hosting · Objective-C · Swift · AppGroups
 importance: 7
 category: iOS
-purpose: "약 150개 SK 계열사 iOS 엔터프라이즈 앱의 안정적인 운영·배포 및 QA 프로세스 개선"
+purpose: "150개 이상 SK 계열사 iOS 엔터프라이즈 앱의 안정적인 운영·배포 및 QA 프로세스 개선"
 highlights:
   - "앱 개발 공수 산정·분배, 프로비저닝 인증서 갱신 관리 및 신규 OS 버전 대응"
   - "[자체 개선] IPA 파일 직접 전달 방식 → Firebase Hosting 웹 배포로 전환, 단일 빌드 기반 서버 전환 기능 개발"
   - "TokTokTV 동영상 뷰어(WKWebView) 신규 개발, 파일 비동기 다운로드 및 미리보기 구현"
 outcomes:
-  - "약 150개 앱 안정적 운영·배포 체계 구축으로 서비스 중단 없이 운영 유지"
+  - "150개 이상 앱 안정적 운영·배포 체계 구축으로 서비스 중단 없이 운영 유지"
   - "개선된 QA 배포 방식이 타 부서 QA 표준 가이드라인으로 채택 및 확산"
 ---
 

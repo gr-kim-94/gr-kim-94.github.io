@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 한국 여행지 추천 서비스
-description: Multi-Agent RAG · LangGraph · Qdrant · AWS · 1위 수상
+title: Triver — 한국 여행지 추천 서비스
+description: Multi-Agent RAG · LangGraph · Qdrant · AWS · 최종 1위 · 앱 배포 후 서비스 종료
 img: projects/1_project.png
 importance: 1
 category: AI
@@ -13,10 +13,11 @@ highlights:
   - "병렬 처리·모델 최적화·SSE 적용으로 레이턴시 개선"
 outcomes:
   - "TTFT 4~5초 단축, 전체 레이턴시 20초 → 10초 개선"
-  - "SK 네트웍스 FAMILY AI 캠프 최종 프로젝트 1위 수상"
+  - "SK 네트웍스 FAMILY AI 캠프 최종 프로젝트 1위 (기업 참여 프로젝트 팀 우수상)"
+  - "팀 프로젝트를 앱 서비스로 전환해 2026.09.29 배포, 현재 서비스 종료"
 ---
 
-<span class="badge bg-primary">SK 네트웍스 FAMILY AI 캠프</span> <span class="badge bg-success">🏆 1위 수상</span>
+<span class="badge bg-primary">SK 네트웍스 FAMILY AI 캠프</span> <span class="badge bg-success">🏆 최종 1위</span> <span class="badge bg-dark">서비스 종료</span>
 
 **5명 (팀장/AI&Backend)** · **2개월** · Python · DBML · React
 
@@ -55,3 +56,9 @@ LangGraph · FastAPI · MySQL · Qdrant · GoogleSignIn
 ### 아키텍처
 
 - HTTPS + Route 53 / DB: RDS + Qdrant + S3 / CI/CD: GitHub Actions
+
+---
+
+### 앱 서비스 전환
+
+AI 캠프 팀 프로젝트를 앱 서비스로 전환해 2026.09.29 배포했으며, 현재는 서비스를 종료했습니다.
